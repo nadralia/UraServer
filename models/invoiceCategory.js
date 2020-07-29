@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 
-const taxCategorySchema = new mongoose.Schema(
+const invoiceCategorySchema = new mongoose.Schema(
     {
-        taxName: {
+        invoiceName: {
             type: String,
             trim: true,
             required: true,
@@ -13,4 +13,4 @@ const taxCategorySchema = new mongoose.Schema(
     { timestamps: true }
 );
 
-module.exports = mongoose.model("TaxCategory", taxCategorySchema);
+module.exports = mongoose.model("InvoiceCategory", invoiceCategorySchema);
